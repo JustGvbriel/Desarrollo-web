@@ -103,10 +103,12 @@ div.contenedor{
     padding-left: 25px;
     gap:130px;
 }
-
-
-/*Clases para reglas de la ruleta */
-h2.forms {
+130px;
+}
+/* ======================= */
+/*    PÁGINA DE RULETA     */
+/* ======================= */
+h2.rr-titulo {
     color: white;
     background-color: red;
     text-align: center;
@@ -115,89 +117,17 @@ h2.forms {
     margin: 0px;
 }
 
-
-p.forms {
-    text-align: left;
-    padding: 10px 20px;
-    color: black;
-}
-
-/* Caja de fondo para el contenido */
-div.formsFondo {
-    background-color: rgb(235, 235, 235);
-    padding: 20px;
-    margin-top: 0px;
-    text-align: left;
-    border-radius: 8px;
-}
-
-/* Subtítulos de secciones */
-h3.subtitulo {
-    color: red;
-    margin-top: 20px;
-}
-
-/* Listas de reglas/apuestas */
-ul.lista {
-    text-align: left;
-    padding-left: 40px;
-    margin-top: 10px;
-    margin-bottom: 20px;
-    color: black;
-}
-
-/* Espaciado para botón */
-div.espacio {
-    padding-top: 15px;
-    text-align: center;
-}
-
-/* Botón similar al de signUp */
-button.submit {
-    color: white;
-    background-color: #6457d3;
-    border-radius: 15px;
-    padding: 10px 20px;
-    border: none;
-    cursor: pointer;
-}
-
-button.submit:hover {
-    background-color: rgb(80, 123, 201);
-}
-
-
-
-
-body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f4; /* gris claro de fondo */
-    margin: 0;
-    padding: 0;
-}
-
-/* ====== TÍTULO PRINCIPAL ====== */
-h2.forms {
-    color: white;
-    background-color: red;
-    text-align: center;
-    border: 1px solid #a80303;
-    padding: 15px 0px;
-    margin: 0px;
-}
-
-/* ====== CONTENEDOR PRINCIPAL ====== */
-div.formsFondo {
+div.rr-fondo {
     background-color: white;
     padding: 20px;
     margin: 20px auto;
     border-radius: 10px;
     max-width: 900px;
     box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    text-align: left;
 }
 
-/* ====== SUBTÍTULOS ====== */
-h3.subtitulo {
+h3.rr-subtitulo {
     color: red;
     margin-top: 20px;
     margin-bottom: 8px;
@@ -205,7 +135,20 @@ h3.subtitulo {
     padding-bottom: 5px;
 }
 
-/* ====== IMAGEN DE RULETA ====== */
+p.rr-texto {
+    text-align: left;
+    padding: 10px 20px;
+    color: black;
+}
+
+ul.rr-lista {
+    text-align: left;
+    padding-left: 40px;
+    margin: 10px 0px 20px 0px;
+    color: black;
+}
+
+/* Imagen ruleta */
 .ruleta-img {
     width: 70%;
     max-width: 500px;
@@ -215,19 +158,19 @@ h3.subtitulo {
     margin: 10px auto;
 }
 
-/* ====== ESTADO DEL JUEGO ====== */
-p.estado {
+/* Estado del juego */
+p.rr-estado {
     font-weight: bold;
     font-size: 18px;
     color: white;
-    background-color: #bf0404; /* rojo oscuro */
+    background-color: #bf0404;
     border-radius: 5px;
     display: inline-block;
     padding: 8px 15px;
 }
 
-/* ====== SALDO ====== */
-p.saldo {
+/* Saldo */
+p.rr-saldo {
     font-size: 20px;
     font-weight: bold;
     color: green;
@@ -237,20 +180,13 @@ p.saldo {
     border-radius: 5px;
 }
 
-/* ====== LISTA DE NÚMEROS ====== */
-ul.lista {
-    text-align: left;
-    padding-left: 40px;
-    margin: 10px 0px 20px 0px;
-    color: black;
-}
-
+/* Colores números */
 .rojo { color: red; font-weight: bold; }
 .negro { color: black; font-weight: bold; }
 .verde { color: green; font-weight: bold; }
 
-/* ====== TABLA DE APUESTAS ====== */
-table.tabla-apuesta {
+/* Tabla apuestas */
+table.rr-tabla {
     width: 100%;
     border-collapse: collapse;
     margin-top: 10px;
@@ -258,28 +194,28 @@ table.tabla-apuesta {
     box-shadow: 0 0 5px rgba(0,0,0,0.2);
 }
 
-table.tabla-apuesta th, 
-table.tabla-apuesta td {
+table.rr-tabla th, 
+table.rr-tabla td {
     border: 1px solid #ccc;
     padding: 10px;
     text-align: center;
 }
 
-table.tabla-apuesta th {
+table.rr-tabla th {
     background-color: red;
     color: white;
     font-weight: bold;
 }
 
-/* ====== BOTÓN VOLVER ====== */
-div.espacio {
+/* Botón volver */
+div.rr-espacio {
     padding-top: 20px;
     text-align: center;
 }
 
-button.submit {
+button.rr-submit {
     color: white;
-    background-color: #6457d3; /* morado */
+    background-color: #6457d3;
     border-radius: 20px;
     padding: 12px 25px;
     border: none;
@@ -288,6 +224,6 @@ button.submit {
     transition: 0.3s;
 }
 
-button.submit:hover {
+button.rr-submit:hover {
     background-color: rgb(80, 123, 201);
 }
